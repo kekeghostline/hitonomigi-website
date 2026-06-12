@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヒトノミギ株式会社 | Hitonomigi Inc.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1d2b3a;       /* 藍 - 見出し・本文 */
+    --paper: #f7f3ea;     /* 生成り - 背景 */
+    --paper-deep: #efe8d8;
+    --vermillion: #c1442d; /* 緋色 - アクセント */
+    --gold: #c8a13b;      /* 金 - 装飾線 */
+    --line: rgba(29,43,58,0.14);
+    --max-width: 880px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--vermillion); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--vermillion);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ===== Header ===== */
+  header {
+    padding: 96px 0 72px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .emblem {
+    width: 220px;
+    margin: 0 auto 28px;
+  }
+  .emblem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  header h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+  }
+
+  header .en {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--vermillion);
+    text-transform: uppercase;
+  }
+
+  header .tagline {
+    margin-top: 28px;
+    font-size: 0.98rem;
+    letter-spacing: 0.08em;
+    color: rgba(29,43,58,0.7);
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+    opacity: 0.6;
+  }
+
+  /* ===== Section: Company overview ===== */
+  main { padding: 64px 0 40px; }
+
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 8px;
+  }
+
+  .section-title .num {
+    color: var(--vermillion);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+  }
+
+  .overview {
+    margin-top: 40px;
+    border-top: 1px solid var(--line);
+  }
+
+  .overview dl {
+    display: grid;
+    grid-template-columns: minmax(140px, 220px) 1fr;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .overview dt,
+  .overview dd {
+    padding: 22px 4px;
+  }
+
+  .overview dt {
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--vermillion);
+    font-size: 0.92rem;
+    padding-right: 24px;
+  }
+
+  .overview dd {
+    font-weight: 400;
+  }
+
+  .overview ul {
+    list-style: none;
+  }
+  .overview ul li {
+    padding-left: 1.1em;
+    position: relative;
+  }
+  .overview ul li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  @media (max-width: 560px) {
+    .overview dl {
+      grid-template-columns: 1fr;
+      padding: 18px 0;
+    }
+    .overview dt { padding-bottom: 4px; }
+    .overview dd { padding-top: 0; }
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    margin-top: 80px;
+    padding: 40px 0 56px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 0.82rem;
+    color: rgba(29,43,58,0.55);
+    letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="emblem">
+    <img src="hitonomigi_logo.png" alt="ヒトノミギ株式会社 ロゴ">
+  </div>
+
+  <h1>
+    ヒトノミギ株式会社
+    <span class="en">Hitonomigi Inc.</span>
+  </h1>
+
+  <p class="tagline">スマートフォン向けアプリケーションの企画・開発</p>
+</header>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<main class="wrap">
+  <h2 class="section-title">
+    <span class="num">Company Profile</span>
+    会社概要
+  </h2>
+
+  <div class="overview">
+    <dl>
+      <dt>会社名</dt>
+      <dd>ヒトノミギ株式会社（Hitonomigi Inc.）</dd>
+    </dl>
+    <dl>
+      <dt>所在地</dt>
+      <dd>〒164-0001<br>東京都中野区中野5丁目67番7号 プラザ中野801</dd>
+    </dl>
+    <dl>
+      <dt>設立</dt>
+      <dd>令和元年11月</dd>
+    </dl>
+    <dl>
+      <dt>代表者</dt>
+      <dd>代表取締役　竹中啓佑</dd>
+    </dl>
+    <dl>
+      <dt>事業内容</dt>
+      <dd>
+        <ul>
+          <li>スマホアプリ開発</li>
+          <li>ITコンサルティング</li>
+          <li>情報提供サービス</li>
+          <li>Webサイトおよびデジタルコンテンツの制作</li>
+        </ul>
+      </dd>
+    </dl>
+    <dl>
+      <dt>お問い合わせ</dt>
+      <dd><a href="mailto:ktakenaka@hitonomigi.co.jp">ktakenaka@hitonomigi.co.jp</a></dd>
+    </dl>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Hitonomigi Inc.
+</footer>
+
+</body>
+</html>
